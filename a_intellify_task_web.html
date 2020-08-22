@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>my css</title>
+<link rel="stylesheet" href="styles.css">
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<body>
+<nav>
+<ul class="topnav" id="dropdownclick">
+    <li><a href="#home">home</a></li>
+    <li><a href="#news">news</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="#about">about</a></li>
+    <li class="topnav-right"><a href="regi.html">Register</a></li>
+    <li class="topnav-right"><a href="login.html">Login</a></li>
+    <!--<li class="dropdownicon"><a href="">&#9776;</a></li>-->
+    <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+</ul> 
+</nav>
+<div class="container" id="secg1">
+	<div class="row">
+		<div class="col-6">
+ 	         <div class="leftside-col">
+		 <h1 class="large">Welcome to ur website Intellify</h1>
+		 <h1 class="large">Login form</h1>
+		 </div>
+			<form>
+			<div class="leftside-col">
+			<h2><label for="select type">Login as:</label></h2>
+  <select id="type" name="type">
+    <option value="hotel">Login as hotel management </option>
+    <option value="customer"> Login as customer</option>
+</select>
+		 	<h2>Username</h2>
+		 	<input class="inputbox"name="username"type="text"placeholder="Username">
+		 	<h2>Password</h2>
+		 	<input class="inputbox"name="password"type="text"placeholder="Password">
+			</div>
+			</form>
+	</div>
+		   <div class="col-6">
+			
+		   </div>
+	</div>
+</div>
+<header>
+	<h1 class="headersec">These top destinations are just a click away</h1>
+</header>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="mumbai.html">mumbai</a>
+    <a href="delhi.html">delhi</a>
+    <a href="bangalore.html">bengaluru</a>
+    <a href="dubai.html">dubai</a>
+    <a href="jaipur.html">jaipur</a>
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+	 <div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="westin.png">
+		 </div>
+		<label>The Westin Mumbai Garden City</label>
+		<p>*Pay at the property</p>
+		<p>Rs.11,297</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="sun.png">
+		 </div>
+		<label>Sun-n-Sand Mumbai</label>
+		<p>Booking.com  *Free cancellation</p>
+		<p>Rs.6,698</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="Bawa.png">
+		 </div>
+		<label>Hotel Bawa Mumbai</label>
+		<p></p>	
+		<p>Booking.com  *Free cancellation</p>
+		<p>Rs.4,297</p>
+		</div>
+	 </div>
+	</div>
+<!-------------------------------------------------------------------------------->
+<div class="container">
+	<div class="row">
+	 <div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="oyo.png">
+		 </div>
+		<label>Oyo Home 67606 Devender Prasad </label>
+		<p>Pay at property</p>
+		<p>Rs.1,551</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="nangis.png">
+		 </div>
+		<label>The Nangis Pride By real worth</label>
+		<p>Booking.com,Free cancellation</p>
+		<p>Rs.1,341</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="treeb.png">
+		 </div>
+		<label>Treebo trend the Anchorage</label>
+		<p>Agoda,free cancellation</p>
+		<p>Rs.1,527</p>	
+		</div>
+	 </div>
+	</div>
+<!--------------------------------------------------------------------------------------->
+
+<div class="container">
+	<div class="row">
+	 <div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="jaipur.png">
+		 </div>
+		<label>Jaipur Marriot Hotel</label>
+		<p>Pay at property</p>
+		<p>Rs.4,851</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="oyoo.png">
+		 </div>
+		<label>Oyo 63137 ekansh homestay</label>
+		<p>Booking.com,Free cancellation</p>
+		<p>Rs.7,311</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="treebo.png">
+		 </div>
+		<label>Comfort Inn Sapphire</label>
+		<p>Agoda,free cancellation</p>
+		<p>Rs.1,674</p>	
+		</div>
+	 </div>
+	</div>
+<!--------------------------------------------------------------------------------------->
+<div class="container">
+	<div class="row">
+	 <div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="JW.png">
+		 </div>
+		<label>JW Marriott Mumbai Sahar</label>
+		<p>Pay at property</p>
+		<p>Rs.11,551</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="fab.png">
+		 </div>
+		<label>FabEXPRESS oRANGE Suites Santacruz</label>
+		<p>Booking.com,Free cancellation</p>
+		<p>Rs.1,851</p>	
+		</div>
+	 </div>
+	<div class="col-4">
+		<div class="box">
+		 <div class="icon">
+			<img src="Zostel.png">
+		 </div>
+		<label>Zostel Delhi</label>
+		<p>Agoda,free cancellation</p>
+		<p>Rs.2,574</p>	
+		</div>
+	 </div>
+	</div>
+<!--------------------------------------------------------------------------------------->
+	<div class="row">
+		<div class="col-12">
+		<button class="learnmore"><a href="learnmore.html">click for more</a></button>
+		</div>
+
+	</div>
+</div>
+<hr> 
+<div class="container">
+    <div class="row">
+    <div class="col-7">
+        <article>
+<br></br>
+	    
+<p>How to book</p>
+            <p>Intellify is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. This means that while users decide on Intellify which hotel best suits their needs, the booking process itself is completed through the booking sites (which are linked to our website). By clicking on the “view deal” button, you will be forwarded onto a booking site where you can complete the reservation for the hotel deal found on Intellify.</p>
+        
+        </article>
+    </div>
+    <div class="col-5">
+<article>
+ <p>Hotel reviews help you find your ideal hotel</p>
+            <p>Over 175 million aggregated hotel ratings and more than 19 million images allow you to find out more about where you're travelling. To get an extended overview of a hotel property, Intellify shows the average rating and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc. trivago makes it easy for you to find information about your trip to Dubai, including the ideal hotel for you.</p>       
+  </article>
+     </div>
+    </div>
+</div>
+<footer class="foot">
+    <div class="row">
+        <div class="col-3 mob">
+            <h3>Intellify</h3>
+              <ul>
+                  <li>About</li>
+                  <li>Blogs</li>
+                  <li>Careers</li>
+              </ul>
+        </div>
+        <div class="col-3 mob">
+            <h3>company</h3>
+	      <ul>
+                  <li>jobs</li>
+                  <li>press</li>
+                  <li>Investor Relations</li>
+              </ul>
+        </div>
+        <div class="col-3 mob">
+            <h3>contact us</h3>
+              <ul>
+                  <li>facebook</li>
+                  <li>instagram</li>
+                  <li>gmail</li>
+              </ul>
+        </div>
+        <div class="col-3 mob">
+            <h3>Help</h3>
+              <ul>
+                  <li>Terms and Conditions</li>
+                  <li>Legal Information</li>
+                  <li>Privacy note</li>
+              </ul>
+        </div>
+    </div>    
+</footer>
+</body>
+</html>
